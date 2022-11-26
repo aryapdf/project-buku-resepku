@@ -1,0 +1,10 @@
+@media screen and (min-width: 650px) {
+   
+}
+
+   
+@media screen and (min-width: 800px) {
+    .app-bar .brand h1 {
+      font-size: 1.7em;
+    }
+}

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import '~bootstrap/scss/bootstrap';
 
 * {
     padding: 0;
@@ -16,7 +17,6 @@ body {
 /* App Bar */
 
 .app-bar {
-    padding: 4px 4px;
     background-color: #fff;
     display: grid;
     grid-template-columns: auto 1fr auto;
@@ -36,6 +36,7 @@ body {
 .app-bar .menu button {
     background-color: transparent;
     border: none;
+    padding-left: 1vh;
     font-size: 36px;
     cursor: pointer;
 }
@@ -50,14 +51,12 @@ body {
     text-transform: uppercase;
     font-size: 24px;
     user-select: none;
-    padding-right: 8px;
-    margin: auto;
+    margin: auto 1vh;
 }
 
 .app-bar .option {
     position: absolute;
-    top: 70px;
-    left: -16vw;
+    left: -18vw;
     width: 18vw;
     font-size: 18px;
     font-weight: bold;
@@ -69,6 +68,14 @@ body {
 
 .app-bar .option.open {
     left: 0;
+}
+
+.app-bar .option .btn-close {
+    padding: 16px;
+    color: #fff;
+}
+.app-bar .option button:focus {
+    outline: none;
 }
 
 .app-bar .option ul li a {

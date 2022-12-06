@@ -7,6 +7,12 @@ class RecipeDbSource {
     return responseJson.results;
   }
 
+  static async newestRecipes() {
+    const response = await fetch(API_ENDPOINT.RECIPES_LIMIT);
+    const responseJson = await response.json();
+    return responseJson.results;
+  }
+
   static async detailRecipes(key) {
     const response = await fetch(API_ENDPOINT.DETAIL(key));
     const responseJson = await response.json();
@@ -19,6 +25,11 @@ class RecipeDbSource {
     return responseJson.results;
   }
 
+  static async detailCategory(key) {
+    const response = await fetch(API_ENDPOINT.CATEGORY_DETAIL(key));
+    const responseJson = await response.json();
+    return responseJson.results;
+  }
 }
 
 export default RecipeDbSource;

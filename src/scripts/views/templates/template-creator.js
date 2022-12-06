@@ -45,8 +45,11 @@ const createRecipeDetail = (results) => `
 `;
 
 const createCategoriesRecipe = (results) => `
-    <div class="card text-bg-light">
-            <h5 class="card-title text-light"><a href="#/category/recipes/${results.key}">${results.category}</a></h5>
+    <div class="card h-100 border border-0 mt-2" style="
+      background: rgb(51,51,51);
+      background: linear-gradient(270deg, rgba(51,51,51,1) 11%, rgba(255,255,255,1) 11%);
+      ">
+            <h5 class="card-title text-light h-100 category"><a href="#/category/recipes/${results.key}">${results.category}</a></h5>
     </div>
 `;
 

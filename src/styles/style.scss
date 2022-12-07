@@ -19,6 +19,12 @@ body {
 a {
     text-decoration: none;
     color: #000;
+    transition: 0.5s;
+}
+
+a:hover {
+    color:rgb(159, 159, 159);
+    transition: 0.5s;
 }
 
 
@@ -35,6 +41,13 @@ a {
     z-index: 10;
     height: 60px;
     border-bottom: 2px solid rgb(159, 159, 159);
+    box-shadow: 0px 2px 2px 0px rgba(158,158,158,0.49);
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(158,158,158,0.49);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(158,158,158,0.49);
+}
+
+.app-bar .appLogo {
+    height: 58px;
 }
 
 .app-bar .menu {
@@ -46,7 +59,7 @@ a {
     background-color: transparent;
     border: none;
     padding-left: 1vh;
-    font-size: 28px;
+    font-size: 2rem;
     cursor: pointer;
 }
 
@@ -55,19 +68,11 @@ a {
     align-items: center;
 }
 
-.app-bar .brand h1 {
-    color: #000;
-    text-transform: uppercase;
-    font-size: 24px;
-    user-select: none;
-    margin: auto 1vh;
-}
-
 .app-bar .option {
     position: absolute;
-    left: -18vw;
-    width: 18vw;
-    font-size: 18px;
+    left: -250px;
+    width: 250px;
+    font-size: 1.2rem;
     font-weight: bold;
     height: 100vh;
     transition: all 0.5s;
@@ -89,6 +94,13 @@ a {
     box-shadow: none;
 }
 
+.app-bar .option .drawerLogo {
+    width: 150px;
+    display: flex;
+    margin: 0 auto;
+    padding: 5vh 0;
+    border-radius: 50%;
+}
 .app-bar .option ul li a {
     display: flex;
     flex-direction: column;
@@ -100,7 +112,7 @@ a {
     text-transform: uppercase;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .app-bar .search {
@@ -122,7 +134,7 @@ a {
     border: none;
     padding-left: 8px;
     height: 16px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .app-bar .search .submit {
@@ -130,7 +142,7 @@ a {
     border: none;
     background-color: #d9d9d9   ;
     padding: 2px 10px;
-    font: 500 16px 'Open Sans', sans-serif;
+    font: 500 1rem 'Open Sans', sans-serif;
 }
 
 
@@ -149,17 +161,20 @@ a {
 .heroTitle, .heroSubtitle {
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
     color: #ffffff;
 }
 
 .heroTitle {
-    padding-top: 200px;
-    font-size: 72px;
+    padding-top: 20vh;
+    font-size: 4.5rem;
     font-weight: 700;
 }
 
 .heroSubtitle {
-    font: 300 italic 24px 'Open sans', sans-serif;
+    font: 300 italic 1.5rem 'Open sans', sans-serif;
     padding-top: 1%;
 }
 
@@ -183,8 +198,9 @@ col .card ul {
 }
 
 .col .card ul li {
-    font-size: 13px;
-    font-family: 'Open sans', sans-serif;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 1px;
 }
 
 
@@ -192,6 +208,139 @@ col .card ul {
     font: 500 1.2rem 'Poppins', sans-serif;
     text-transform: uppercase;
     width: 80%;
+}
+
+/* Menu & Recipe */
+
+.heroMenu {
+    background: rgba(0, 0, 0, .2) url(../public/bg-carousel-2.jpg) no-repeat right;
+    background-blend-mode: darken;
+    height: 50vh;
+    background-size: cover;
+}
+
+.heroMenuTitle, .heroMenuSubtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.heroMenuTitle {
+    padding-top: 15vh;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.heroMenuSubtitle {
+    font: 300 italic 1.5rem 'Open sans', sans-serif;
+    padding-top: 1vh;
+}
+
+/* Detail Page */
+
+.detail .borderline {
+    width: 100%;
+    height: 5vh;
+    border-bottom: 2px solid rgb(159, 159, 159);
+    box-shadow: 0px 2px 2px 0px rgba(158,158,158,0.49);
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(158,158,158,0.49);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(158,158,158,0.49);
+}
+
+.detail .hero-title {
+    font-size: 3rem;
+    width: 90%;
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+
+.detail .text-1 {
+    font: 500 1rem 'Open sans', sans-serif;
+    opacity: 60%;
+    text-transform: uppercase;
+}
+
+.detail .text-2 {
+    font-size: .8rem;
+}
+
+.detail ul li {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.detail .hero-img {
+    max-height: 60vh;
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.detail .desc {
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin-top: 2vh;
+    text-align: justify;
+}
+
+.detail .sub-title {
+    font: 700 1.8rem 'Open sans', sans-serif;
+    text-align: left;
+    margin: 10px 0;
+}
+.detail .ingredients .ingredient {
+    font: 400 1.25rem 'Poppins', sans-serif;
+    width: 80%;
+    list-style: none;
+    margin: 0;
+}
+
+.detail .numbers-and-steps {
+    display: flex;
+}
+
+.detail .numbers .number {
+    width: 50px;
+    height: 100px;
+    list-style: none;
+    text-align: center;
+    font: 500 2.5rem 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.detail .steps .step {
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    font: 400 1rem 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.detail .other-line {
+    width: 100%;
+    height: 3vh;
+    display: flex;
+    border-bottom: 3px solid #333;
+}
+
+.detail .other-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font: 800 1.8rem 'Source Serif Pro', sans-serif;
+    opacity: 80%;
+    margin: 1vh 0;
 }
 
 /* main content */
@@ -202,9 +351,9 @@ main {
 
 .line {
     width: 20vw;
-    height: 5vh;
+    height: 2vh;
     display: flex;
-    margin: auto;
+    margin: 0 auto;
     border-bottom: 2px solid lightgray;
 }
 

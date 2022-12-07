@@ -1,11 +1,11 @@
 import CONFIG from './config';
 
 const API_ENDPOINT = {
-  RECIPES: `${CONFIG.BASE_URL}recipes`,
-  RECIPES_LIMIT: `${CONFIG.BASE_URL}recipes-length?limit=4`,
-  CATEGORY: `${CONFIG.BASE_URL}category/recipes`,
+  RECIPES: `${CONFIG.BASE_URL}search/?q`,
+  RECIPES_HOME: `${CONFIG.BASE_URL}recipes-length?limit=8`,
+  RECIPES_OTHER: `${CONFIG.BASE_URL}recipes-length?limit=4`,
   DETAIL: (key) => `${CONFIG.BASE_URL}recipe/${key}`,
-  CATEGORY_DETAIL: (key) => `${CONFIG.BASE_URL}/category/recipes/${key}`,
+  SEARCH_RECIPES: (key) => `${CONFIG.BASE_URL}search/?q=${key}`,
 };
 
 export default API_ENDPOINT;

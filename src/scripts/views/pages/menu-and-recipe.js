@@ -4,10 +4,16 @@ import { createRecipeTemplate } from '../templates/template-creator';
 const MenuAndRecipe = {
   async render() {
     return `
+        <div class="heroMenu">
+        <h2 class="heroMenuTitle">Semua Bisa Masak<h2>
+        <p class ="heroMenuSubtitle">Dengan hadirnya resep yang bisa dilihat dimana saja kapan saja, semua jadi bisa masak!</p>
+        </div>
+        <h3 class="text-center fw-semibold fs-1 mt-4">Daftar Menu Resep</h3>
+        <div class="line"></div>
         <div class="container">
-          <h2 class="text-center mt-4">Menu dan Resep<h2>
-          <div class="row row-cols-6 row-cols-md-4 g-4" id="recipes">
-          </div>
+                    <div class="row row-cols-1 row-cols-xl-4 row-cols-md-2 mt-2 g-4" id="recipes">
+                    </div>
+            </div>
         </div>
     `;
   },

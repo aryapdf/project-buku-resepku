@@ -2,6 +2,7 @@ import 'regenerator-runtime';
 import '../styles/style.scss';
 import '../styles/responsive.scss';
 import App from './views/app';
+import './utils/search-function';
 
 const app = new App({
   button: document.querySelector('#hamburgerButton'),

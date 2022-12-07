@@ -7,18 +7,23 @@ class RecipeDbSource {
     return responseJson.results;
   }
 
+  static async newestRecipes() {
+    const response = await fetch(API_ENDPOINT.RECIPES_HOME);
+    const responseJson = await response.json();
+    return responseJson.results;
+  }
+
+  static async otherRecipes() {
+    const response = await fetch(API_ENDPOINT.RECIPES_OTHER);
+    const responseJson = await response.json();
+    return responseJson.results;
+  }
+
   static async detailRecipes(key) {
     const response = await fetch(API_ENDPOINT.DETAIL(key));
     const responseJson = await response.json();
     return responseJson.results;
   }
-
-  static async categoryRecipes() {
-    const response = await fetch(API_ENDPOINT.CATEGORY);
-    const responseJson = await response.json();
-    return responseJson.results;
-  }
-
 }
 
 export default RecipeDbSource;

@@ -15,6 +15,7 @@
     "ajv": "^7.2.4",
     "babel-loader": "^9.1.0",
     "bootstrap": "^5.2.3",
+    "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.2",
     "eslint": "^8.28.0",
@@ -25,12 +26,18 @@
     "node-sass": "^8.0.0",
     "sass-loader": "^13.2.0",
     "style-loader": "^3.3.1",
-    "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.0",
-    "webpack-dev-server": "^4.11.1",
-    "webpack-merge": "^5.8.0"
+    "webpack": "^5.73.0",
+    "webpack-bundle-analyzer": "^4.5.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.2",
+    "webpack-merge": "^5.8.0",
+    "workbox-webpack-plugin": "^6.5.3"
   },
   "dependencies": {
-    "regenerator-runtime": "^0.13.11"
+    "bootstrap-icons": "^1.10.2",
+    "idb": "^7.0.1",
+    "lazysizes": "^5.3.2",
+    "regenerator-runtime": "^0.13.11",
+    "workbox-window": "^6.5.3"
   }
 }

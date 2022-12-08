@@ -1,10 +1,33 @@
-@media screen and (min-width: 650px) {
-   
-}
-
-   
-@media screen and (min-width: 800px) {
-    .app-bar .brand h1 {
-      font-size: 1.7em;
+@media screen and (max-width: 992px) {
+    .heroTitle {
+        font-size: 3.5rem;
+    }
+    .heroSubtitle {
+        font-size: 1.25rem;
+    }
+    .heroMenuTitle {
+        font-size: 3rem;
+    }
+    .heroMenuSubtitle {
+        font-size: 1.25rem;
+    }
+    .detail .hero-title {
+        font-size: 2rem;
+        width: 100%
+    }
+    .detail ul li {
+        font-size: 1.2rem;
+    }
+    .detail hero-img {
+        width: 100%
+    }
+    .detail .desc{
+        font-size: 1rem;
+    }
+    .detail .ingredients .ingredient {
+        font-size: 1.1rem;
+    }
+    .detail .other-title {
+        font-size: 1.5rem;
     }
 }

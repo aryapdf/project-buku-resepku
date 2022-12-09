@@ -33,21 +33,24 @@ a:hover {
 
 .app-bar {
     background-color: #fff;
-    display: grid;
+    display: flex;
     grid-template-columns: auto 1fr auto;
     gap: 10px;
     position: sticky;
     top: 0;
     z-index: 10;
     height: 60px;
-    border-bottom: 2px solid rgb(159, 159, 159);
+    border-bottom: 1px solid rgb(159, 159, 159);
     box-shadow: 0px 2px 2px 0px rgba(158,158,158,0.49);
     -webkit-box-shadow: 0px 2px 2px 0px rgba(158,158,158,0.49);
     -moz-box-shadow: 0px 2px 2px 0px rgba(158,158,158,0.49);
 }
 
 .app-bar .appLogo {
-    height: 58px;
+    height: 55px;
+    position: absolute;
+    top: 0;
+    right: 47.3%;
 }
 
 .app-bar .menu {
@@ -152,7 +155,7 @@ a:hover {
 
 /* Home */
 .hero {
-    background: rgba(0, 0, 0, .2) url(../public/bg-carousel-1.jpg) no-repeat right;
+    background: rgba(0, 0, 0, .2) url(../public/images/bg-carousel-1.jpg) no-repeat right;
     background-blend-mode: darken;
     height: 60vh;
     background-size: cover;
@@ -213,7 +216,7 @@ col .card ul {
 /* Menu & Recipe */
 
 .heroMenu {
-    background: rgba(0, 0, 0, .2) url(../public/bg-carousel-2.jpg) no-repeat right;
+    background: rgba(0, 0, 0, .2) url(../public/images/bg-carousel-2.jpg) no-repeat right;
     background-blend-mode: darken;
     height: 50vh;
     background-size: cover;
@@ -244,7 +247,7 @@ col .card ul {
 .detail .borderline {
     width: 100%;
     height: 5vh;
-    border-bottom: 2px solid rgb(159, 159, 159);
+    border-bottom: 1px solid rgb(159, 159, 159);
     box-shadow: 0px 2px 2px 0px rgba(158,158,158,0.49);
     -webkit-box-shadow: 0px 2px 2px 0px rgba(158,158,158,0.49);
     -moz-box-shadow: 0px 2px 2px 0px rgba(158,158,158,0.49);
@@ -330,7 +333,7 @@ col .card ul {
     width: 100%;
     height: 3vh;
     display: flex;
-    border-bottom: 3px solid #333;
+    border-bottom: 2px solid #232323;
 }
 
 .detail .other-title {
@@ -343,6 +346,36 @@ col .card ul {
     margin: 1vh 0;
 }
 
+
+.detail .review-section .input-review-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail .review-section textarea, button {
+    margin: 1vh 0;
+}
+
+.detail .review-section textarea {
+    border: 2px solid lightgray;
+    font-family: 'Poppins', sans-serif;
+    padding: 1vh;
+}
+
+.detail .review-section #input-name {
+    height: 50px;
+}
+
+.detail .review-section #input-comment {
+    height: 12vh;
+}
+
+.detail .review-section button {
+    height: 40px;
+    background-color: #292929;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
 /* main content */
 
 main {
@@ -354,7 +387,7 @@ main {
     height: 2vh;
     display: flex;
     margin: 0 auto;
-    border-bottom: 2px solid lightgray;
+    border-bottom: 1px solid lightgray;
 }
 
 /* footer */

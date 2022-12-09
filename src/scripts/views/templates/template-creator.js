@@ -41,7 +41,7 @@ const createRecipeHeroDetail = (results) => `
 const createRecipeMainDetail = (results) => `
 <div class="border-0 mt-3">
   <p class="card-text desc">${results.desc.split('.', 5)}.</p>
-  </div>
+  <div class="line"></div>
   <div class="row row-cols-1 mt-3">
   <h2 class="sub-title">Bahan-Bahan</h2>
       <div class="group-of-ingredients mb-2">
@@ -59,21 +59,21 @@ const createRecipeMainDetail = (results) => `
             </div>
         </div>
     </div>
-</div>
-`;
-
-const createCategoriesRecipe = (results) => `
-    <div class="card h-100 border border-0 mt-2" style="
-      background: rgb(51,51,51);
-      background: linear-gradient(270deg, rgba(51,51,51,1) 11%, rgba(255,255,255,1) 11%);
-      ">
-            <h5 class="card-title text-light h-100 category"><a href="#/category/recipes/${results.key}">${results.category}</a></h5>
-    </div>
+    <div class="line"></div>
+    <div class="review-section">
+      <h2 class="sub-title">Ulasan</h2>
+        <div class="reviews" id="reviews"></div>
+        <div class="input-review-section">
+          <textarea id="input-name" name="input-name" type="text" placeholder="Nama" required></textarea>
+          <textarea cols="30" id="input-comment" name="input-comment" type="text" placeholder="Beri komentar" required></textarea>
+          <button id="submit-review" class="submit-review" type="submit" value="submit">Kirim
+          </button>
+        </div>
+    </div
 `;
 
 export {
   createRecipeTemplate,
   createRecipeHeroDetail,
   createRecipeMainDetail,
-  createCategoriesRecipe,
 };

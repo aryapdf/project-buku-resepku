@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start-dev": "webpack serve --port 9002 --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "webpack --config webpack.prod.js",
+    "build-image": "node sharp.js"
   },
   "author": "C22-132",
   "license": "ISC",
@@ -25,6 +26,7 @@
     "mini-css-extract-plugin": "^2.7.0",
     "node-sass": "^8.0.0",
     "sass-loader": "^13.2.0",
+    "sharp": "^0.31.2",
     "style-loader": "^3.3.1",
     "webpack": "^5.73.0",
     "webpack-bundle-analyzer": "^4.5.0",

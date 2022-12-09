@@ -1,7 +1,10 @@
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
+
 const createRecipeTemplate = (results) => `
   <div class="col">
     <div class="card h-100 border border-0 me-1" style="margin: auto;">
-        <img src="${results.thumb}" class="card-img-top" alt="${results.title}">
+        <img class="lazyload" data-src="${results.thumb}" class="card-img-top" alt="${results.title}">
         <div class="card-body-m-0">
             <ul class="list-group list-group-horizontal">
             <li class="list-group-item p-auto px-0 border border-0"><i class="bi bi-alarm-fill"></i> ${results.times}</li>
@@ -28,7 +31,7 @@ const createRecipeHeroDetail = (results) => `
       <li class="list-group-item flex-fill text-center border border-0"> <i class="bi bi-egg-fried"></i> ${results.difficulty}</li>
     </ul>
     <div class="card border-0">
-      <img src="${results.thumb}" class="img-fluid hero-img">
+      <img class="lazyload" data-src="${results.thumb}" class="img-fluid hero-img">
     </div>
   </div>
 </div>

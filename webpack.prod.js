@@ -1,6 +1,5 @@
 const path = require('path');
 const { merge } = require('webpack-merge');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ImageminWebpackPlugin = require('imagemin-webpack-plugin').default;
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ImageminMozjpeg = require('imagemin-mozjpeg');
@@ -72,7 +71,6 @@ module.exports = merge(common, {
         }),
       ],
     }),
-    new CleanWebpackPlugin(),
     new BundleAnalyzerPlugin(),
   ],
 });

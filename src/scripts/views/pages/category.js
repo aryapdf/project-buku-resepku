@@ -1,27 +1,27 @@
 import RecipeDbSource from '../../data/recipedb-source';
+import UrlParser from '../../routes/url-parser';
 import { createRecipeTemplate, createCategoriesTemplate } from '../templates/template-creator';
 
-const Home = {
+const Category = {
   async render() {
     return `
-        <div class="hero">
-          <h2 class="heroTitle">Resep Untuk Semua<h2>
-          <p class ="heroSubtitle">Semua bisa masak. Masak untuk semua.</p>
+        <div class="heroCategory">
+          <h2 class="heroMenuTitle">Resep Terkategori<h2>
         </div>
-        <div class="container mt-4 h-100 homepage">
-          <div class="category-section row row-cols-2 row-cols-lg-5 row-cols-sm-2 g-4" id="categories"></div>
-          <h3 class="text-center fw-semibold fs-1 mt-4">Resep Rekomendasi</h3>
+        <div class="container category-page mt-4">
+          <div class="category-section row row-cols-1 row-cols-lg-5 row-cols-sm-2 g-4 mb-2" id="categories"></div>
           <div class="line"></div>
           <div class="row row-cols-1 row-cols-xl-4 row-cols-md-2 mt-2 g-4" id="recipes">
           </div>
         </div>
-        `;
+    `;
   },
 
   async afterRender() {
-    const newRecipes = await RecipeDbSource.newestRecipes();
+    const url = UrlParser.parseActiveUrlWithoutCombiner();
+    const recipes = await RecipeDbSource.categoryRecipes(url.key);
     const recipesContainer = document.querySelector('#recipes');
-    newRecipes.forEach((recipe) => {
+    recipes.forEach((recipe) => {
       recipesContainer.innerHTML += createRecipeTemplate(recipe);
     });
 
@@ -33,4 +33,4 @@ const Home = {
   },
 };
 
-export default Home;
+export default Category;

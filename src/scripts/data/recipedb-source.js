@@ -24,6 +24,18 @@ class RecipeDbSource {
     const responseJson = await response.json();
     return responseJson.results;
   }
+
+  static async categories() {
+    const response = await fetch(API_ENDPOINT.CATEGORIES);
+    const responseJson = await response.json();
+    return responseJson.results;
+  }
+
+  static async categoryRecipes(key) {
+    const response = await fetch(API_ENDPOINT.CATEGORY(key));
+    const responseJson = await response.json();
+    return responseJson.results;
+  }
 }
 
 export default RecipeDbSource;

@@ -35,7 +35,6 @@ const createRecipeHeroDetail = (results) => `
     </div>
   </div>
 </div>
-<div class="borderline"></div>
 `;
 
 const createRecipeMainDetail = (results) => `
@@ -72,8 +71,15 @@ const createRecipeMainDetail = (results) => `
     </div
 `;
 
+const createCategoriesTemplate = (results) => `
+<div class="category-item">
+  <h3 class="category"><a href="#/category/${results.key}">${results.category}</a></h3>
+</div>
+`;
+
 export {
   createRecipeTemplate,
   createRecipeHeroDetail,
   createRecipeMainDetail,
+  createCategoriesTemplate,
 };

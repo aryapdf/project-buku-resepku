@@ -49,7 +49,7 @@ const MenuAndRecipe = {
     searchBtn.addEventListener('click', async (event) => {
       event.preventDefault();
       items = '';
-      const search = await RecipesAPI.fetchURL(`https://masak-apa.tomorisakura.vercel.app/api/search/?q=${inputSearch.value}`);
+      const search = await RecipesAPI.fetchURL(`http://api-recipee.herokuapp.com/api/search/posts?q=${inputSearch.value}`);
 
       if (search.data.length === 0) {
         items = `<p class="empty-comment">No Result for ${inputSearch.value}</p>`;
@@ -57,6 +57,8 @@ const MenuAndRecipe = {
       }
       search.data.forEach((res) => items += createRecipeTemplate(res));
       recipesContainer.innerHTML = items;
+
+      inputSearch.value = '';
     });
   },
 };

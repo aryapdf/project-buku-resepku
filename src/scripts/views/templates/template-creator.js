@@ -50,13 +50,6 @@ const createRecipeMainDetail = (data) => `
         </div>
     </div>
     <div class="other-line"></div>
-    <div class="review">
-      ${data.comments.reduce((show, value) => show.concat(`
-        <h3 class="review-name">${value.name}</h3>
-        <div class="review-line"></div>
-      `), '')}
-      ${data.comments.reduce((show, value) => show.concat(`<p class="review-desc">${value.description}</p>`), '')}
-    </div>
 </div>
 `;
 

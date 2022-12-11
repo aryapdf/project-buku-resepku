@@ -5,6 +5,9 @@
     .content-text {
         font-size: 1.2rem;
     }
+    .category-section .category-item .category {
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -52,9 +55,7 @@
     }
     .category-section .category-item {
         margin-top: 2vh;
-    }
-    .category-section .category-item .category {
-        font-size: 1.2rem;
+        min-height: auto;
     }
 }
 

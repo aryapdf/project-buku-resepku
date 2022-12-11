@@ -12,13 +12,6 @@ if (!fs.existsSync(destination)) {
 
 fs.readdirSync(target)
   .forEach((image) => {
-    // mengubah ukuran gambar dengan lebar 1200px, dengan prefix -extra-large.jpg
-    sharp(`${target}/${image}`)
-      .resize(1200)
-      .toFile(path.resolve(__dirname, `${destination}/${image.split('.')
-        .slice(0, -1)
-        .join('.')}-extra-large.jpg`));
-
     // mengubah ukuran gambar dengan lebar 800px, dengan prefix -large.jpg
     sharp(`${target}/${image}`)
       .resize(800)

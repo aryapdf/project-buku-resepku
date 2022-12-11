@@ -9,7 +9,7 @@ const createRecipeTemplate = (data) => `
             <ul class="list-group list-group-horizontal">
             <li class="list-group-item p-0 border border-0"><i class="fa-solid fa-bowl-food"></i> ${data.category}</li>
             </ul>
-            <h2 class="card-title h5"><a href="#/detail/${data.id}">${data.title}</a></h2>
+            <h2 class="card-title recipe-title"><a href="#/detail/${data.id}">${data.title}</a></h2>
         </div>
     </div>
   </div>
@@ -49,6 +49,7 @@ const createRecipeMainDetail = (data) => `
             </div>
         </div>
     </div>
+    <div class="other-line"></div>
 </div>
 `;
 

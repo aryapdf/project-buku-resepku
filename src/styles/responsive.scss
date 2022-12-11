@@ -1,3 +1,15 @@
+@media screen and (max-width: 1200px) {
+    .content-title {
+        font-size: 2.5rem;
+    }
+    .content-text {
+        font-size: 1.2rem;
+    }
+    .category-section .category-item .category {
+        font-size: 1.2rem;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .app-bar .appLogo {
         position: relative;
@@ -9,6 +21,12 @@
     }
     .heroSubtitle {
         font-size: 1.25rem;
+    }
+    .content-title {
+        font-size: 2.2rem;
+    }
+    .content-text {
+        font-size: 1rem;
     }
     .heroMenuTitle {
         font-size: 3rem;
@@ -37,9 +55,25 @@
     }
     .category-section .category-item {
         margin-top: 2vh;
+        min-height: auto;
     }
-    .category-section .category-item .category {
-        font-size: 1.2rem;
+}
+
+@media screen and(max-width: 762px) {
+    .img-one, .home-img {
+        display: none;;
+    }
+    .home-content {
+        max-height: 200px;
+        margin: 0;
+        padding: 0;
+    }
+    .text-one, .text-two, .title-one, .title-two {
+        padding-right: 0;
+        padding-left: 0;
+        text-align: center;
+        align-self: center;
+        justify-content: center;
     }
 }
 
@@ -48,6 +82,12 @@
         font-size: 3rem;
     }
     .heroSubtitle {
+        font-size: 1rem;
+    }
+    .content-title {
+        font-size: 1.8rem;
+    }
+    .content-text {
         font-size: 1rem;
     }
     .heroMenuTitle {

@@ -19,8 +19,8 @@ class RecipeDbSource {
     return responseJson.data;
   }
 
-  static async detailRecipes(key) {
-    const response = await fetch(API_ENDPOINT.DETAIL(key));
+  static async detailRecipes(id) {
+    const response = await fetch(API_ENDPOINT.DETAIL(id));
     const responseJson = await response.json();
     return responseJson.data;
   }
@@ -31,8 +31,8 @@ class RecipeDbSource {
     return responseJson.data;
   }
 
-  static async categoryRecipes(key) {
-    const response = await fetch(API_ENDPOINT.CATEGORY(key));
+  static async categoryRecipes(id) {
+    const response = await fetch(API_ENDPOINT.CATEGORY(id));
     const responseJson = await response.json();
     return responseJson.data;
   }

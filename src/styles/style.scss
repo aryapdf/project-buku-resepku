@@ -120,7 +120,7 @@ a:hover {
 
 /* Home */
 .hero {
-    background: rgba(0, 0, 0, .2) url(../public/images/bg-carousel-1.jpg) no-repeat right;
+    background: rgba(0, 0, 0, .2) url(../public/images/bg-hero-1.jpg) no-repeat right;
     background-blend-mode: darken;
     height: 60vh;
     background-size: cover;
@@ -168,17 +168,61 @@ col .card ul {
     font-family: 'Poppins', sans-serif;
     margin-right: 1px;
 }
+
+.home-content {
+    display:flex;
+    margin: 10vh 0;
+    min-height: 23vh;
+    height: 100%;
+    max-height: 50vh;
+}
+
+.img-one, .img-two {
+    max-height: 33vh;
+    max-width: 100%;
+    min-height: 15vh;
+    object-fit: contain;
+    border-radius: 15px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.content-title, .content-text {
+    display: flex;
+}
+
+.content-title {
+    font: 600 3rem 'Source serif pro', sans-serif;
+}
+
+.content-text {
+    font: 300 1.5rem 'Poppins', sans-serif;
+}
+.title-one, .text-one {
+    padding: 2vh 7vw 0 0;
+    text-align: right;
+    align-self: right;
+    justify-content: right;
+}
+
+.title-two, .text-two {
+    padding: 2vh 0 0 7vw;
+    text-align: left;
+    align-self: left;
+    justify-content: left;
+}
+
 /* Menu & Recipe */
 
 .heroMenu {
-    background: rgba(0, 0, 0, .2) url(../public/images/bg-carousel-2.jpg) no-repeat right;
+    background: rgba(0, 0, 0, .2) url(../public/images/bg-hero-2.jpg) no-repeat right;
     background-blend-mode: darken;
     height: 15vh;
     background-size: cover;
 }
 
 .heroCategory {
-    background: rgba(0, 0, 0, .2) url(../public/images/bg-carousel-3.jpg) no-repeat right;
+    background: rgba(0, 0, 0, .2) url(../public/images/bg-hero-3.jpg) no-repeat right;
     background-blend-mode: darken;
     height: 15vh;
     background-size: cover;
@@ -380,6 +424,10 @@ main {
     flex: 1;
 }
 
+.recipe-title {
+    font: 500 1.3rem 'Source serif pro', sans-serif;
+}
+
 .line {
     width: 20vw;
     height: 2vh;
@@ -431,13 +479,12 @@ main {
     position:relative;
 }
 
-
 .search .input:focus{
     outline: none;
 }
 
 .category-section .category-item {
-    min-height: 5vh;
+    min-height: 8vh;
     display: flex;
     justify-content: center;
     border-radius: 10px;

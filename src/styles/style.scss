@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Source+Serif+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Source Serif Pro', sans-serif;
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.5s;
+}
+
+a:hover {
+    color:rgb(159, 159, 159);
+    transition: 0.5s;
+}
+
+
+
+/* App Bar */
+
+.app-bar {
+    background-color: #fff;
+    display: flex;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 60px;
+    border-bottom: 1px solid rgb(159, 159, 159);
+    box-shadow: 0px 2px 2px 0px rgba(158,158,158,0.49);
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(158,158,158,0.49);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(158,158,158,0.49);
+}
+
+.app-bar .appLogo {
+    height: 55px;
+    position: absolute;
+    top: 0;
+    right: 47.3%;
+}
+
+.app-bar .menu {
+    display: flex;
+    align-items: center;
+}
+
+.app-bar .menu button {
+    background-color: transparent;
+    border: none;
+    padding-left: 1vh;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.app-bar .brand {
+    display: flex;
+    align-items: center;
+}
+
+.app-bar .option {
+    position: absolute;
+    left: -250px;
+    width: 250px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 100vh;
+    transition: all 0.5s;
+    background-color: #333;
+    overflow: hidden;
+}
+
+.app-bar .option.open {
+    left: 0;
+}
+
+.app-bar .option .btn-close {
+    padding: 16px;
+    color: #fff;
+    outline: none;
+    -webkit-font-smoothing: antialiased;
+}
+.app-bar .option .btn-close:focus {
+    box-shadow: none;
+}
+
+.app-bar .option .drawerLogo {
+    width: 150px;
+    display: flex;
+    margin: 0 auto;
+    padding: 5vh 0;
+    border-radius: 50%;
+}
+.app-bar .option ul li a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 18px;
+    margin-bottom: 5px;
+    width: auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.app-bar .search {
+    display: flex;
+    align-items: center;
+    padding-right: 6px;
+    border: 1px solid #b5b5b5;
+    border-radius: 15px;
+    height: 66%;
+    margin: auto 8px;
+}
+
+.app-bar .search .fa-utensils::before {
+    font-size: 24px;
+    padding: 4px 8px;
+}
+
+.app-bar .search .input {
+    border: none;
+    padding-left: 8px;
+    height: 16px;
+    font-size: 1rem;
+}
+
+.app-bar .search .submit {
+    border-radius: 10px;
+    border: none;
+    background-color: #d9d9d9   ;
+    padding: 2px 10px;
+    font: 500 1rem 'Open Sans', sans-serif;
+}
+
+
+.app-bar .search .input:focus{
+    outline: none;
+}
+
+/* Home */
+.hero {
+    background: rgba(0, 0, 0, .2) url(../public/images/bg-carousel-1.jpg) no-repeat right;
+    background-blend-mode: darken;
+    height: 60vh;
+    background-size: cover;
+}
+
+.heroTitle, .heroSubtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    color: #ffffff;
+}
+
+.heroTitle {
+    padding-top: 20vh;
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.heroSubtitle {
+    font: 300 italic 1.5rem 'Open sans', sans-serif;
+    padding-top: 1%;
+}
+
+
+
+.recipeBody {
+    background: rgba(0, 0, 0, .6);
+    display: flex;
+}
+
+.recipeTitle {
+font: 800 16px 'Source serif pro', sans-serif;
+display: flex;
+align-items: center;
+text-align: center;
+}
+
+col .card ul {
+    padding: 0;
+    margin: 0;
+}
+
+.col .card ul li {
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 1px;
+}
+
+
+.category {
+    font: 500 1.2rem 'Poppins', sans-serif;
+    text-transform: uppercase;
+    width: 80%;
+}
+
+/* Menu & Recipe */
+
+.heroMenu {
+    background: rgba(0, 0, 0, .2) url(../public/images/bg-carousel-2.jpg) no-repeat right;
+    background-blend-mode: darken;
+    height: 50vh;
+    background-size: cover;
+}
+
+.heroMenuTitle, .heroMenuSubtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.heroMenuTitle {
+    padding-top: 15vh;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.heroMenuSubtitle {
+    font: 300 italic 1.5rem 'Open sans', sans-serif;
+    padding-top: 1vh;
+}
+
+/* Detail Page */
+
+.detail .borderline {
+    width: 100%;
+    height: 5vh;
+    border-bottom: 1px solid rgb(159, 159, 159);
+    box-shadow: 0px 2px 2px 0px rgba(158,158,158,0.49);
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(158,158,158,0.49);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(158,158,158,0.49);
+}
+
+.detail .hero-title {
+    font-size: 3rem;
+    width: 90%;
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+
+.detail .text-1 {
+    font: 500 1rem 'Open sans', sans-serif;
+    opacity: 60%;
+    text-transform: uppercase;
+}
+
+.detail .text-2 {
+    font-size: .8rem;
+}
+
+.detail ul li {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.detail .hero-img {
+    max-height: 60vh;
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.detail .desc {
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin-top: 2vh;
+    text-align: justify;
+}
+
+.detail .sub-title {
+    font: 700 1.8rem 'Open sans', sans-serif;
+    text-align: left;
+    margin: 10px 0;
+}
+.detail .ingredients .ingredient {
+    font: 400 1.25rem 'Poppins', sans-serif;
+    width: 80%;
+    list-style: none;
+    margin: 0;
+}
+
+.detail .numbers-and-steps {
+    display: flex;
+}
+
+.detail .numbers .number {
+    width: 50px;
+    height: 100px;
+    list-style: none;
+    text-align: center;
+    font: 500 2.5rem 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.detail .steps .step {
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    font: 400 1rem 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.detail .other-line {
+    width: 100%;
+    height: 3vh;
+    display: flex;
+    border-bottom: 2px solid #232323;
+}
+
+.detail .other-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font: 800 1.8rem 'Source Serif Pro', sans-serif;
+    opacity: 80%;
+    margin: 1vh 0;
+}
+
+
+.detail .review-section .input-review-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail .review-section textarea, button {
+    margin: 1vh 0;
+}
+
+.detail .review-section textarea {
+    border: 2px solid lightgray;
+    font-family: 'Poppins', sans-serif;
+    padding: 1vh;
+}
+
+.detail .review-section #input-name {
+    height: 50px;
+}
+
+.detail .review-section #input-comment {
+    height: 12vh;
+}
+
+.detail .review-section button {
+    height: 40px;
+    background-color: #292929;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+/* main content */
+
+main {
+    flex: 1;
+}
+
+.line {
+    width: 20vw;
+    height: 2vh;
+    display: flex;
+    margin: 0 auto;
+    border-bottom: 1px solid lightgray;
+}
+/* about */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-container h4{
+    font-weight: 600;
+}
+.about-card{
+    display: flex;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+.about-items{
+    display: flex;
+    flex-direction: column;
+}
+.about-developers{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.img-wrapper {
+    overflow: hidden;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin: 0 10px;
+    border: 1px solid grey;
+}
+.img-dev{
+    overflow: hidden;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    display: flex;
+    border: 1px solid grey;
+}
+.img-dev img{
+    transform: scale(1.5);
+}
+.card-dev{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* footer */
+
+footer {
+    padding: 16px;
+    margin-top: 16px;
+    background-color: #292929;
+}
+
+footer p {
+    text-align: center;
+    color: #fff;
+}

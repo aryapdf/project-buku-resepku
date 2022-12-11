@@ -1,0 +1,59 @@
+@media screen and (max-width: 992px) {
+    .heroTitle {
+        font-size: 3.5rem;
+    }
+    .heroSubtitle {
+        font-size: 1.25rem;
+    }
+    .heroMenuTitle {
+        font-size: 3rem;
+    }
+    .heroMenuSubtitle {
+        font-size: 1.25rem;
+    }
+    .detail .hero-title {
+        font-size: 2rem;
+        width: 100%
+    }
+    .detail ul li {
+        font-size: 1.2rem;
+    }
+    .detail hero-img {
+        width: 100%
+    }
+    .detail .desc{
+        font-size: 1rem;
+    }
+    .detail .ingredients .ingredient {
+        font-size: 1.1rem;
+    }
+    .detail .other-title {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 592px){
+    .about-container h4{
+        font-size: 16px;
+    }
+    .about-container li, .about-container a{
+        font-size: 14px;
+    }
+    .img-wrapper {
+        overflow: hidden;
+        border-radius: 100%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        margin: 0 10px;
+        border: 1px solid grey;
+    }
+    .img-dev{
+        overflow: hidden;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        display: flex;
+        border: 1px solid grey;
+    }
+}

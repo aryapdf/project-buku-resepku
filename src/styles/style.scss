@@ -496,6 +496,57 @@ main {
     text-transform: uppercase;
     width: 80%;
 }
+
+/* about */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-container h4{
+    font-weight: 600;
+}
+.about-card{
+    display: flex;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+.about-items{
+    display: flex;
+    flex-direction: column;
+}
+.about-developers{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.img-wrapper {
+    overflow: hidden;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    margin: 0 10px;
+    border: 1px solid grey;
+}
+.img-dev{
+    overflow: hidden;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    display: flex;
+    border: 1px solid grey;
+}
+.img-dev img{
+    transform: scale(1.5);
+}
+.card-dev{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /* footer */
 
 footer {

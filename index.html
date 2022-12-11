@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#232323"/>
+    
+    <link rel="icon" href="./images/icon-tab.jpg">
+    <link rel="manifest" href="./app.webmanifest">
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+    
+    <script src="https://kit.fontawesome.com/c238628491.js" crossorigin="anonymous"></script>
+
+    <title>Capstone Project Tim C22-132</title>
+</head>
+<body>
+    <header class="app-bar">
+        <div class="menu">
+            <button id="hamburgerButton">☰</button>
+        </div>
+        <div class="brand">
+            <a href="#/home">
+                <picture>
+                    <source media="(max-width: 480px)" srcset="./images/logo-navBar-small.jpg">
+                    <img src="../images/logo-navBar.png" alt="" class="appLogo">
+                </picture>
+            </a>
+        </div>
+        <nav id="navDrawer" class="option">
+            <button type="button" class="btn-close btn-close-white" aria-label="Close" id="btn-close"></button>
+            <ul class="list-group" id="drawer-menu">
+                <li class="list-group-flush">
+                    <picture>
+                        <source media="(max-width: 480px)" srcset="./images/logo-navDrawer-small.jpg">
+                        <img src="../images/logo-navDrawer.png" alt=""  class="drawerLogo">
+                    </picture>
+                </li>
+                <li class="list-group-flush"><a href="#/home">Beranda</a></li>
+                <li class="list-group-flush"><a href="#/recipe">Menu & Resep</a></li>
+                <li class="list-group-flush"><a href="#/about-us">Tentang Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="mainContent"></main>
+
+    <footer class="text-center text-white mt-5">
+        <div class="container">
+        <hr class="my-4" />
+        <section class="mb-4">
+            <div class="row d-flex justify-content-center">
+                <p>Terima kasih telah berkunjung ke website Resepku, </p>
+                <p>jangan lupa ikutin keseruan-keseruan di Resepku dengan click icon di bawah ini .</p>
+            </div>
+        </section>
+        <section class="text-center mb-4">
+            <a href="https://www.facebook.com/" target="_blank" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.twitter.com/" target="_blank" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.google.com/" target="_blank" class="text-white me-4">
+            <i class="fab fa-google"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.github.com/" target="_blank" class="text-white me-4">
+            <i class="fab fa-github"></i>
+            </a>
+        </section>
+        </div>
+        <div class="text-center p-3"style="background-color: rgba(0, 0, 0, 0.2)">
+        <p>© 2022 Copyright: Dicoding Assignment Capstone Project Team C22-132</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -7,7 +7,6 @@ import {
   createRecipeMainDetail,
   createRecipeTemplate,
   createCategoriesTemplate,
-  createReviewsTemplate,
 } from '../templates/template-creator';
 import API_ENDPOINT from '../../globals/api-endpoint';
 
@@ -75,9 +74,6 @@ const Detail = {
     if (recipe.comments.length === 0) {
       reviewsContainer.innerHTML = '<p class="review-empty">Jadi orang pertama yang mengulas resep ini!</p>';
     }
-    recipe.comments.forEach((comment) => {
-      reviewsContainer.innerHTML = createReviewsTemplate(comment.name, comment.description);
-    });
 
     const inputName = document.querySelector('#input-name');
     const inputComment = document.querySelector('#input-comment');

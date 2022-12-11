@@ -10,8 +10,8 @@ const routes = {
   '/home': Home,
   '/recipe': MenuAndRecipe,
   '/about-us': AboutUs,
-  '/detail/:key': Detail,
-  '/category/:key': Category,
+  '/detail/:id': Detail,
+  '/category/:id': Category,
 };
 
 export default routes;

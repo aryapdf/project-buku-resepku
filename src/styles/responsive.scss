@@ -35,4 +35,41 @@
     .detail .other-title {
         font-size: 1.5rem;
     }
+    .category-section .category-item {
+        margin-top: 2vh;
+    }
+    .category-section .category-item .category {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and(max-width: 576px) {
+    .heroTitle {
+        font-size: 3rem;
+    }
+    .heroSubtitle {
+        font-size: 1rem;
+    }
+    .heroMenuTitle {
+        font-size: 2.25rem;
+    }
+    .heroMenuSubtitle {
+        font-size: 1rem;
+    }
+    .detail .hero-title {
+        font-size: 1.5rem;
+        width: 100%
+    }
+    .detail ul li {
+        font-size: 1rem;
+    }
+    .detail .desc{
+        font-size: 0.8rem;
+    }
+    .detail .ingredients .ingredient {
+        font-size: 1rem;
+    }
+    .detail .other-title {
+        font-size: 1.2rem;
+    }
 }

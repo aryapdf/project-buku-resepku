@@ -1,5 +1,5 @@
 const CONFIG = {
-  BASE_URL: 'https://masak-apa.tomorisakura.vercel.app/api/',
+  BASE_URL: 'http://api-recipee.herokuapp.com/api/',
   CACHE_NAME: new Date().toISOString(),
 
   DATABASE_NAME: 'recipes-database',

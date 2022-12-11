@@ -9,11 +9,15 @@ const Home = {
           <p class ="heroSubtitle">Semua bisa masak. Masak untuk semua.</p>
         </div>
         <div class="container mt-4 h-100 homepage">
-          <div class="category-section row row-cols-2 row-cols-lg-5 row-cols-sm-2 g-4" id="categories"></div>
+          <div class="line"></div>
           <h3 class="text-center fw-semibold fs-1 mt-4">Resep Rekomendasi</h3>
           <div class="line"></div>
           <div class="row row-cols-1 row-cols-xl-4 row-cols-md-2 mt-2 g-4" id="recipes">
           </div>
+          <div class="line"></div>
+          <h3 class="text-center fw-semibold fs-1 mt-4">Cari Berdasarkan Kategori</h3>
+          <div class="line"></div>
+          <div class="category-section row row-cols-2 row-cols-lg-5 row-cols-sm-2 g-4 mt-2" id="categories"></div>
         </div>
         `;
   },

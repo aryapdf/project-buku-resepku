@@ -9,7 +9,7 @@ const AboutUs = {
             <div class="about-developers">
               <div class="card-dev">
                 <div class="img-dev">
-                  <img src="../images/person1.jpeg" alt="" />
+                  <img src="../images/person1.jpg" alt="" />
                 </div>
                 <a href="https://www.instagram.com/faisal.ah_/?hl=id" target="_blank"><i class="fab fa-instagram"></i> faisal.ah_</a>
                 <a href="http://linkedin.com/in/faizaladhany" target="_blank"><i class="fab fa-linkedin"></i> youngniko</a>
@@ -17,7 +17,7 @@ const AboutUs = {
               </div>
               <div class="card-dev">
                 <div class="img-dev">
-                  <img src="../images/person2.jpeg" alt="" />
+                  <img src="../images/person2.jpg" alt="" />
                 </div>
                 <a href="https://www.instagram.com/fazadinanm/?hl=id" target="_blank"><i class="fab fa-instagram"></i> fazadinanm</a>
                 <a href="https://www.linkedin.com/in/fazadinanm/" target="_blank"><i class="fab fa-linkedin"></i> fazadinanm</a>
@@ -28,7 +28,7 @@ const AboutUs = {
               </div>
               <div class="card-dev">
                 <div class="img-dev">
-                  <img src="../images/person3.jpeg" alt="" />
+                  <img src="../images/person3.jpg" alt="" />
                 </div>
                 <a href="https://www.instagram.com/desinofianti_/?hl=id" target="_blank"><i class="fab fa-instagram"></i> desinofianti_</a>
                 <a href="https://www.linkedin.com/in/desi-suci-nofianthi-a2b3a4229/" target="_blank"><i class="fab fa-linkedin"></i> desi suci</a>
@@ -36,7 +36,7 @@ const AboutUs = {
               </div>
               <div class="card-dev">
                 <div class="img-dev">
-                  <img src="../images/person4.jpeg" alt="" />
+                  <img src="../images/person4.jpg" alt="" />
                 </div>
                 <a href="https://www.instagram.com/_aryapdf/?hl=id" target="_blank"><i class="fab fa-instagram"></i> _aryapdf</a>
                 <a href="https://www.linkedin.com/in/arya-agni-pradana-firdaus-174a78243/" target="_blank"><i class="fab fa-linkedin"></i> arya pradana</a>
